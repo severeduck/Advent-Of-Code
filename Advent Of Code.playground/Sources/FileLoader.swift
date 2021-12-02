@@ -4,7 +4,7 @@ import Foundation
 public struct FileLoader {
     
     public static func loadContent(
-        forResource resource: String = "input",
+        forResource resource: String,
         ofType type: String = "txt"
     ) -> String {
         

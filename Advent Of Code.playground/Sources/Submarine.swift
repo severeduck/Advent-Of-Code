@@ -1,7 +1,7 @@
 
 import Foundation
 
-public struct SonarSweeper {
+public struct Submarine {
     public static func countIncreasedDepths(
         in array: [Int],
         slidingWindowSize: Int = 1
@@ -22,5 +22,23 @@ public struct SonarSweeper {
         }
         
         return increasedSumsCount
+    }
+    
+    public static func findFinalPosition(for steps: [Step]) -> Position {
+        var position = Position()
+
+        steps.forEach {
+            switch $0.direction {
+            case .up:
+                position.aim -= $0.distance
+            case .down:
+                position.aim += $0.distance
+            case .forward:
+                position.horizontal += $0.distance
+                position.depth += position.aim * $0.distance
+            }
+        }
+        
+        return position
     }
 }

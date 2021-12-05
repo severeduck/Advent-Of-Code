@@ -95,11 +95,11 @@
 		6569B4EC275D6B5400C8DBF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6569B4ED275D6B5400C8DBF6 /* Submarine.swift */,
-				6569B4EE275D6B5400C8DBF6 /* Models */,
-				6569B4F5275D6B5400C8DBF6 /* Extensions */,
 				6569B4F7275D6B5400C8DBF6 /* Bingo.swift */,
+				6569B4ED275D6B5400C8DBF6 /* Submarine.swift */,
+				6569B4F5275D6B5400C8DBF6 /* Extensions */,
 				6569B4F8275D6B5400C8DBF6 /* Helpers */,
+				6569B4EE275D6B5400C8DBF6 /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -107,12 +107,12 @@
 		6569B4EE275D6B5400C8DBF6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6569B4EF275D6B5400C8DBF6 /* SubmarineStatus.swift */,
-				6569B4F0275D6B5400C8DBF6 /* Point.swift */,
-				6569B4F1275D6B5400C8DBF6 /* Step.swift */,
-				6569B4F2275D6B5400C8DBF6 /* Line.swift */,
-				6569B4F3275D6B5400C8DBF6 /* Position.swift */,
 				6569B4F4275D6B5400C8DBF6 /* Direction.swift */,
+				6569B4F2275D6B5400C8DBF6 /* Line.swift */,
+				6569B4F0275D6B5400C8DBF6 /* Point.swift */,
+				6569B4F3275D6B5400C8DBF6 /* Position.swift */,
+				6569B4F1275D6B5400C8DBF6 /* Step.swift */,
+				6569B4EF275D6B5400C8DBF6 /* SubmarineStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

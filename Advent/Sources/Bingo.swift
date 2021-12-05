@@ -2,13 +2,14 @@
 import Foundation
 
 public struct Bingo {
-    public static func play(gameContent: [String]) {
+    public static func play(gameContent: [String]) -> Int {
         let loadedGame = prepareGame(gameContent: gameContent)
         var ballsSequence = loadedGame.0
         var tickets = loadedGame.1
         
         var winner: [[(Int, Bool)]]?
         var ballPlayed = 0
+        var lastWinnerScore = 0
         while !ballsSequence.isEmpty {
             ballPlayed = ballsSequence.removeFirst()
 
@@ -19,11 +20,13 @@ public struct Bingo {
             for _ in tickets {
                 if let winnerIndex = tickets.firstIndex(where: { isWinner(ticket: $0) }) {
                     winner = tickets[winnerIndex]
-                    print("calculateScore: \(calculateScore(ticket: winner!, ball: ballPlayed))")
+                    lastWinnerScore = calculateScore(ticket: winner!, ball: ballPlayed)
                     tickets.remove(at: winnerIndex)
                 }
             }
         }
+        
+        return lastWinnerScore
     }
     
     private static func prepareGame(gameContent: [String]) -> ([Int], [[[(Int, Bool)]]]) {

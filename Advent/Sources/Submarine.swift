@@ -42,7 +42,7 @@ public struct Submarine {
         return position
     }
     
-    public static func calculatePowerConsumption(report: [UInt16]) -> PowerConsumption {
+    public static func getSubmarineStatus(report: [UInt16]) -> SubmarineStatus {
         var frequencies = [Int](repeating: 0, count: 16)
         for reportEntry in report {
             var mask = UInt16(1)
@@ -77,7 +77,12 @@ public struct Submarine {
         let oxygenRate = search(report: report, query: .findMoreOrEqual)
         let co2Rate = search(report: report, query: .findLessOrEqual)
         
-        return PowerConsumption(gammaRate: Int(gammaRate), epsilonRate: Int(epsilonRate))
+        return SubmarineStatus(
+            gammaRate: Int(gammaRate),
+            epsilonRate: Int(epsilonRate),
+            oxygenRate: Int(oxygenRate),
+            co2Rate: Int(co2Rate)
+        )
     }
 
     public static func countHydrothermalVents(lines: [Line]) -> Int {

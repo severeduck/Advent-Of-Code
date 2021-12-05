@@ -1,5 +1,6 @@
 
 import XCTest
+@testable import Advent
 
 public class StringConversionTests: XCTestCase {
 

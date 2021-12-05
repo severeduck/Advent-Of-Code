@@ -1,5 +1,7 @@
 
 import XCTest
+@testable import Advent
+
 
 public class FileLoaderTests: XCTestCase {
     func testFileLoad() {

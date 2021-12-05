@@ -5,7 +5,7 @@ public struct Line {
     public let start: Point
     public let end: Point
     
-    public var pointsCoveredWhenHorizontalOrVertical: [Point] {
+    public var coveredPoints: [Point] {
         let distanceX = abs(end.x - start.x)
         let distanceY = abs(end.y - start.y)
         

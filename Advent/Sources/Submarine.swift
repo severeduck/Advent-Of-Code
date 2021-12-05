@@ -88,7 +88,7 @@ public struct Submarine {
     public static func countHydrothermalVents(lines: [Line]) -> Int {
         var pointsMap = [Point: Int]()
         lines.forEach {
-            let pointsCovered = $0.pointsCoveredWhenHorizontalOrVertical
+            let pointsCovered = $0.coveredPoints
             pointsCovered.forEach {
                 pointsMap[$0, default: 0] += 1
             }

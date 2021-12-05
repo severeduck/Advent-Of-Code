@@ -82,16 +82,20 @@ public class SubmarineTests: XCTestCase {
 00010
 01010
 """
-        let result = Submarine.calculatePowerConsumption(report: input.uint16s)
-        print(result)
-        XCTAssertEqual(result.epsilonRate, 9)
-        XCTAssertEqual(result.gammaRate, 22)
+        let status = Submarine.getSubmarineStatus(report: input.uint16s)
+        XCTAssertEqual(status.epsilonRate, 9)
+        XCTAssertEqual(status.gammaRate, 22)
     }
     
     func testDay3() {
         let report = FileLoader.loadContent(forResource: "day3").uint16s
-        let rates = Submarine.calculatePowerConsumption(report: report)
+        
+        let status = Submarine.getSubmarineStatus(report: report)
 
+        XCTAssertEqual(status.epsilonRate, 3676)
+        XCTAssertEqual(status.gammaRate, 419)
+        XCTAssertEqual(status.oxygenRate, 1161)
+        XCTAssertEqual(status.co2Rate, 3621)
     }
     
     func testCountHydrothermalVents() {

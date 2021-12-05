@@ -3,8 +3,7 @@ import XCTest
 @testable import Advent
 
 public class BingoTests: XCTestCase {
-
-    func test() {
+    func testSampleInput() {
         let input =
 """
 7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,19,3,26,1
@@ -27,9 +26,18 @@ public class BingoTests: XCTestCase {
 22 11 13  6  5
  2  0 12  3  7
 """
+        
+        let outcome = Bingo.play(gameContent: input.strings)
+        
+        XCTAssertEqual(outcome, 1924)
+    }
+    
+    func testDay4() {
         let testFile = FileLoader.loadContent(forResource: "day4")
-
-        Bingo.play(gameContent: testFile.strings)
+        
+        let outcome = Bingo.play(gameContent: testFile.strings)
+        
+        XCTAssertEqual(outcome, 36975)
     }
 }
 

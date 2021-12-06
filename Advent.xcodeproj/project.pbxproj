@@ -19,6 +19,9 @@
 		6569B503275D6B5400C8DBF6 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B4F9275D6B5400C8DBF6 /* FileLoader.swift */; };
 		657B9012275B8E8E00D9A034 /* day4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 657B9011275B8E8E00D9A034 /* day4.txt */; };
 		657B9014275B8EA400D9A034 /* BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B9013275B8EA400D9A034 /* BingoTests.swift */; };
+		65958E44275E0C0A00B2A1C3 /* LanternfishSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65958E43275E0C0A00B2A1C3 /* LanternfishSimulator.swift */; };
+		65958E46275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65958E45275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift */; };
+		65958E48275E0D0900B2A1C3 /* day6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65958E47275E0D0900B2A1C3 /* day6.txt */; };
 		6595BF24275A996E0002D85C /* AdventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF23275A996E0002D85C /* AdventApp.swift */; };
 		6595BF26275A996E0002D85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF25275A996E0002D85C /* ContentView.swift */; };
 		6595BF28275A99700002D85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595BF27275A99700002D85C /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		6569B4F9275D6B5400C8DBF6 /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		657B9011275B8E8E00D9A034 /* day4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day4.txt; sourceTree = "<group>"; };
 		657B9013275B8EA400D9A034 /* BingoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingoTests.swift; sourceTree = "<group>"; };
+		65958E43275E0C0A00B2A1C3 /* LanternfishSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanternfishSimulator.swift; sourceTree = "<group>"; };
+		65958E45275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanternfishSimulatorTests.swift; sourceTree = "<group>"; };
+		65958E47275E0D0900B2A1C3 /* day6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day6.txt; sourceTree = "<group>"; };
 		6595BF20275A996E0002D85C /* Advent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6595BF23275A996E0002D85C /* AdventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventApp.swift; sourceTree = "<group>"; };
 		6595BF25275A996E0002D85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6569B4F7275D6B5400C8DBF6 /* Bingo.swift */,
+				65958E43275E0C0A00B2A1C3 /* LanternfishSimulator.swift */,
 				6569B4ED275D6B5400C8DBF6 /* Submarine.swift */,
 				6569B4F5275D6B5400C8DBF6 /* Extensions */,
 				6569B4F8275D6B5400C8DBF6 /* Helpers */,
@@ -177,6 +184,7 @@
 			children = (
 				6595BF34275A99700002D85C /* AdventTests.swift */,
 				657B9013275B8EA400D9A034 /* BingoTests.swift */,
+				65958E45275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift */,
 				6595BF6C275A9AE80002D85C /* FileLoaderTests.swift */,
 				6595BF6D275A9AE80002D85C /* StringConversionTests.swift */,
 				6595BF6E275A9AE80002D85C /* SubmarineTests.swift */,
@@ -193,6 +201,7 @@
 				6595BF67275A9ADB0002D85C /* day3.txt */,
 				657B9011275B8E8E00D9A034 /* day4.txt */,
 				65EDA3F1275D1D810047AF6C /* day5.txt */,
+				65958E47275E0D0900B2A1C3 /* day6.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -285,6 +294,7 @@
 				6595BF69275A9ADB0002D85C /* day1.txt in Resources */,
 				6595BF2B275A99700002D85C /* Preview Assets.xcassets in Resources */,
 				6595BF28275A99700002D85C /* Assets.xcassets in Resources */,
+				65958E48275E0D0900B2A1C3 /* day6.txt in Resources */,
 				6595BF6A275A9ADB0002D85C /* day2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65958E44275E0C0A00B2A1C3 /* LanternfishSimulator.swift in Sources */,
 				6569B502275D6B5400C8DBF6 /* Bingo.swift in Sources */,
 				6595BF26275A996E0002D85C /* ContentView.swift in Sources */,
 				6569B4FC275D6B5400C8DBF6 /* Point.swift in Sources */,
@@ -327,6 +338,7 @@
 				6595BF6F275A9AE80002D85C /* FileLoaderTests.swift in Sources */,
 				6595BF70275A9AE80002D85C /* StringConversionTests.swift in Sources */,
 				6595BF35275A99700002D85C /* AdventTests.swift in Sources */,
+				65958E46275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

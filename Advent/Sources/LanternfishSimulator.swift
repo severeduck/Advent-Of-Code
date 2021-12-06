@@ -16,7 +16,7 @@ public struct LanternfishSimulator {
         }
         
         for _ in 0..<numberOfDays {
-            let fishesToResetCount = UInt(population[0, default: 0])
+            let fishesToResetCount = UInt(population[0]!)
             
             for key in 1...maxFishLifespan {
                 let fishesCount = population[key]!

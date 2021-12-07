@@ -17,10 +17,7 @@ public class LanternfishSimulatorTests: XCTestCase {
     
     func testDay6() {
         let testFile = FileLoader.loadContent(forResource: "day6")
-        let fishes = testFile
-            .replacingOccurrences(of: "\n", with: "")
-            .split(separator: ",")
-            .compactMap { Int($0) }
+        let fishes = testFile.commaSeparatedInts
         
         let result1 = LanternfishSimulator.simulateSpawn(fishes: fishes, numberOfDays: 80)
         let result2 = LanternfishSimulator.simulateSpawn(fishes: fishes, numberOfDays: 256)

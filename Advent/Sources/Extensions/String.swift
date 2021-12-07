@@ -6,6 +6,12 @@ extension String {
         split(separator: "\n").compactMap { Int($0) }
     }
     
+    public var commaSeparatedInts: [Int] {
+        replacingOccurrences(of: "\n", with: "")
+        .split(separator: ",")
+        .compactMap { Int($0) }
+    }
+    
     public var uint16s: [UInt16] {
         split(separator: "\n").compactMap { UInt16($0, radix:2) }
     }

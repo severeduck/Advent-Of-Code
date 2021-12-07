@@ -13,9 +13,6 @@ public struct CrabPositioner {
 
             destinations.forEach { destination in
                 let travelDistance = abs(destination - origin)
-                
-                if travelDistance == 0 { return }
-
                 travelCosts[destination] += (travelDistance) * (travelDistance + 1) / 2
             }
         }

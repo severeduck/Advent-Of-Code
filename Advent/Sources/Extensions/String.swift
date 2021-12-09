@@ -62,4 +62,20 @@ extension String {
             )
         }
     }
+    
+    public var digitalDisplayData: [([DigitDisplay], [DigitDisplay])] {
+        strings.compactMap {
+            let components = $0.components(separatedBy: " | ")
+            
+            let inputDigitDisplay = components[0]
+                .split(separator: " ")
+                .compactMap({ DigitDisplay(string: String($0)) })
+            
+            let outputDigitDisplay = components[1]
+                .split(separator: " ")
+                .compactMap({ DigitDisplay(string: String($0)) })
+
+            return (inputDigitDisplay, outputDigitDisplay)
+        }
+    }
 }

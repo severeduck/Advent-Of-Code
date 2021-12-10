@@ -6,6 +6,14 @@ extension String {
         split(separator: "\n").compactMap { Int($0) }
     }
     
+    public var digitsAsInts: [[Int]] {
+        strings.compactMap {
+            $0.compactMap {
+                Int(String($0))
+            }
+        }
+    }
+    
     public var commaSeparatedInts: [Int] {
         replacingOccurrences(of: "\n", with: "")
         .split(separator: ",")

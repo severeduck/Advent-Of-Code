@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653DEA552763B5E000479616 /* SyntaxScoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DEA542763B5E000479616 /* SyntaxScoring.swift */; };
+		653DEA582763B66100479616 /* SyntaxScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DEA572763B66100479616 /* SyntaxScoringTests.swift */; };
+		653DEA5A2763CFFC00479616 /* day10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 653DEA592763CFFC00479616 /* day10.txt */; };
+		653DF85B2762576900310FE1 /* LowPointsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DF85A2762576900310FE1 /* LowPointsFinder.swift */; };
+		653DF85D2762592B00310FE1 /* LowPointsFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DF85C2762592B00310FE1 /* LowPointsFinderTests.swift */; };
+		653DF85F276259CD00310FE1 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DF85E276259CD00310FE1 /* Collection.swift */; };
+		653DF86127625D3500310FE1 /* day9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 653DF86027625D3500310FE1 /* day9.txt */; };
 		6569B4FA275D6B5400C8DBF6 /* Submarine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B4ED275D6B5400C8DBF6 /* Submarine.swift */; };
 		6569B4FB275D6B5400C8DBF6 /* SubmarineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B4EF275D6B5400C8DBF6 /* SubmarineStatus.swift */; };
 		6569B4FC275D6B5400C8DBF6 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B4F0275D6B5400C8DBF6 /* Point.swift */; };
@@ -54,6 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		653DEA542763B5E000479616 /* SyntaxScoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntaxScoring.swift; sourceTree = "<group>"; };
+		653DEA572763B66100479616 /* SyntaxScoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoringTests.swift; sourceTree = "<group>"; };
+		653DEA592763CFFC00479616 /* day10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day10.txt; sourceTree = "<group>"; };
+		653DF85A2762576900310FE1 /* LowPointsFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowPointsFinder.swift; sourceTree = "<group>"; };
+		653DF85C2762592B00310FE1 /* LowPointsFinderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowPointsFinderTests.swift; sourceTree = "<group>"; };
+		653DF85E276259CD00310FE1 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		653DF86027625D3500310FE1 /* day9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day9.txt; sourceTree = "<group>"; };
 		6569B4ED275D6B5400C8DBF6 /* Submarine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submarine.swift; sourceTree = "<group>"; };
 		6569B4EF275D6B5400C8DBF6 /* SubmarineStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmarineStatus.swift; sourceTree = "<group>"; };
 		6569B4F0275D6B5400C8DBF6 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -110,14 +124,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653DEA532763B5CA00479616 /* Day10 */ = {
+			isa = PBXGroup;
+			children = (
+				653DEA542763B5E000479616 /* SyntaxScoring.swift */,
+			);
+			path = Day10;
+			sourceTree = "<group>";
+		};
+		653DEA562763B65300479616 /* Day10 */ = {
+			isa = PBXGroup;
+			children = (
+				653DEA572763B66100479616 /* SyntaxScoringTests.swift */,
+			);
+			path = Day10;
+			sourceTree = "<group>";
+		};
 		6569B4EC275D6B5400C8DBF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				6569B4F7275D6B5400C8DBF6 /* Bingo.swift */,
 				65DAEABB275F22BC002F8028 /* CrabPositioner.swift */,
 				65958E43275E0C0A00B2A1C3 /* LanternfishSimulator.swift */,
+				653DF85A2762576900310FE1 /* LowPointsFinder.swift */,
 				65A78A0E27612FD6003D5550 /* SevenSegmentSearch.swift */,
 				6569B4ED275D6B5400C8DBF6 /* Submarine.swift */,
+				653DEA532763B5CA00479616 /* Day10 */,
 				6569B4F5275D6B5400C8DBF6 /* Extensions */,
 				6569B4F8275D6B5400C8DBF6 /* Helpers */,
 				6569B4EE275D6B5400C8DBF6 /* Models */,
@@ -142,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				6569B4F6275D6B5400C8DBF6 /* String.swift */,
+				653DF85E276259CD00310FE1 /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +229,7 @@
 		6595BF33275A99700002D85C /* AdventTests */ = {
 			isa = PBXGroup;
 			children = (
+				653DEA562763B65300479616 /* Day10 */,
 				6595BF34275A99700002D85C /* AdventTests.swift */,
 				657B9013275B8EA400D9A034 /* BingoTests.swift */,
 				65A78A1027613035003D5550 /* SevenSegmentSearchTests.swift */,
@@ -203,6 +237,7 @@
 				65958E45275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift */,
 				6595BF6C275A9AE80002D85C /* FileLoaderTests.swift */,
 				6595BF6D275A9AE80002D85C /* StringConversionTests.swift */,
+				653DF85C2762592B00310FE1 /* LowPointsFinderTests.swift */,
 				6595BF6E275A9AE80002D85C /* SubmarineTests.swift */,
 			);
 			path = AdventTests;
@@ -220,6 +255,8 @@
 				65958E47275E0D0900B2A1C3 /* day6.txt */,
 				65DAEABD275F2306002F8028 /* day7.txt */,
 				65A78A1227613050003D5550 /* day8.txt */,
+				653DF86027625D3500310FE1 /* day9.txt */,
+				653DEA592763CFFC00479616 /* day10.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -306,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6595BF68275A9ADB0002D85C /* file_loader_test_input.txt in Resources */,
+				653DF86127625D3500310FE1 /* day9.txt in Resources */,
 				65EDA3F2275D1D810047AF6C /* day5.txt in Resources */,
 				65A78A1327613050003D5550 /* day8.txt in Resources */,
 				6595BF6B275A9ADB0002D85C /* day3.txt in Resources */,
@@ -314,6 +352,7 @@
 				6595BF2B275A99700002D85C /* Preview Assets.xcassets in Resources */,
 				6595BF28275A99700002D85C /* Assets.xcassets in Resources */,
 				65958E48275E0D0900B2A1C3 /* day6.txt in Resources */,
+				653DEA5A2763CFFC00479616 /* day10.txt in Resources */,
 				6595BF6A275A9ADB0002D85C /* day2.txt in Resources */,
 				65DAEABE275F2306002F8028 /* day7.txt in Resources */,
 			);
@@ -336,10 +375,13 @@
 				65958E44275E0C0A00B2A1C3 /* LanternfishSimulator.swift in Sources */,
 				6569B502275D6B5400C8DBF6 /* Bingo.swift in Sources */,
 				6595BF26275A996E0002D85C /* ContentView.swift in Sources */,
+				653DF85F276259CD00310FE1 /* Collection.swift in Sources */,
 				6569B4FC275D6B5400C8DBF6 /* Point.swift in Sources */,
 				6569B501275D6B5400C8DBF6 /* String.swift in Sources */,
+				653DEA552763B5E000479616 /* SyntaxScoring.swift in Sources */,
 				6569B4FA275D6B5400C8DBF6 /* Submarine.swift in Sources */,
 				6569B4FB275D6B5400C8DBF6 /* SubmarineStatus.swift in Sources */,
+				653DF85B2762576900310FE1 /* LowPointsFinder.swift in Sources */,
 				6569B503275D6B5400C8DBF6 /* FileLoader.swift in Sources */,
 				6595BF24275A996E0002D85C /* AdventApp.swift in Sources */,
 				65DAEABC275F22BC002F8028 /* CrabPositioner.swift in Sources */,
@@ -357,11 +399,13 @@
 			files = (
 				657B9014275B8EA400D9A034 /* BingoTests.swift in Sources */,
 				6595BF71275A9AE80002D85C /* SubmarineTests.swift in Sources */,
+				653DEA582763B66100479616 /* SyntaxScoringTests.swift in Sources */,
 				6595BF6F275A9AE80002D85C /* FileLoaderTests.swift in Sources */,
 				6595BF70275A9AE80002D85C /* StringConversionTests.swift in Sources */,
 				6595BF35275A99700002D85C /* AdventTests.swift in Sources */,
 				65A78A1127613035003D5550 /* SevenSegmentSearchTests.swift in Sources */,
 				65958E46275E0C6200B2A1C3 /* LanternfishSimulatorTests.swift in Sources */,
+				653DF85D2762592B00310FE1 /* LowPointsFinderTests.swift in Sources */,
 				65DAEAC0275F231E002F8028 /* CrabPositionerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

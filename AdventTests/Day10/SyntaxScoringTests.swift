@@ -18,7 +18,7 @@ class SyntaxScoringTests: XCTestCase {
 <{([{{}}[<[[[<>{}]]]>[]]
 """.strings
         let result = SyntaxScoring.calculateSyntaxErrorScore(for: input)
-        XCTAssertEqual(result, 26397)
+        XCTAssertEqual(result, 288957)
     }
     
     func testDay10() {
@@ -26,6 +26,6 @@ class SyntaxScoringTests: XCTestCase {
         
         let result = SyntaxScoring.calculateSyntaxErrorScore(for: input)
         
-        XCTAssertEqual(result, 321237)
+        XCTAssertEqual(result, 2360030859)
     }
 }

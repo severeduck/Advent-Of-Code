@@ -43,7 +43,6 @@
 		65032906293A276700666229 /* SevenSegmentSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FA293A276700666229 /* SevenSegmentSearchTests.swift */; };
 		65032907293A276700666229 /* LanternfishSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FB293A276700666229 /* LanternfishSimulatorTests.swift */; };
 		65032908293A276700666229 /* BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FC293A276700666229 /* BingoTests.swift */; };
-		65032909293A276700666229 /* AdventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FD293A276700666229 /* AdventTests.swift */; };
 		6503290A293A276700666229 /* SyntaxScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FF293A276700666229 /* SyntaxScoringTests.swift */; };
 		6595BF24275A996E0002D85C /* AdventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF23275A996E0002D85C /* AdventApp.swift */; };
 		6595BF26275A996E0002D85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF25275A996E0002D85C /* ContentView.swift */; };
@@ -98,7 +97,6 @@
 		650328FA293A276700666229 /* SevenSegmentSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchTests.swift; sourceTree = "<group>"; };
 		650328FB293A276700666229 /* LanternfishSimulatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanternfishSimulatorTests.swift; sourceTree = "<group>"; };
 		650328FC293A276700666229 /* BingoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingoTests.swift; sourceTree = "<group>"; };
-		650328FD293A276700666229 /* AdventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventTests.swift; sourceTree = "<group>"; };
 		650328FF293A276700666229 /* SyntaxScoringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntaxScoringTests.swift; sourceTree = "<group>"; };
 		6595BF20275A996E0002D85C /* Advent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6595BF23275A996E0002D85C /* AdventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventApp.swift; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 				650328FA293A276700666229 /* SevenSegmentSearchTests.swift */,
 				650328FB293A276700666229 /* LanternfishSimulatorTests.swift */,
 				650328FC293A276700666229 /* BingoTests.swift */,
-				650328FD293A276700666229 /* AdventTests.swift */,
 				650328FE293A276700666229 /* Day10 */,
 			);
 			path = 2021;
@@ -493,7 +490,6 @@
 				65032903293A276700666229 /* LowPointsFinderTests.swift in Sources */,
 				6503290A293A276700666229 /* SyntaxScoringTests.swift in Sources */,
 				65032907293A276700666229 /* LanternfishSimulatorTests.swift in Sources */,
-				65032909293A276700666229 /* AdventTests.swift in Sources */,
 				65032905293A276700666229 /* CrabPositionerTests.swift in Sources */,
 				65032906293A276700666229 /* SevenSegmentSearchTests.swift in Sources */,
 				65032908293A276700666229 /* BingoTests.swift in Sources */,

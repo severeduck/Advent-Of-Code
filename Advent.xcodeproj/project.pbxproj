@@ -44,9 +44,9 @@
 		65032907293A276700666229 /* LanternfishSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FB293A276700666229 /* LanternfishSimulatorTests.swift */; };
 		65032908293A276700666229 /* BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FC293A276700666229 /* BingoTests.swift */; };
 		6503290A293A276700666229 /* SyntaxScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650328FF293A276700666229 /* SyntaxScoringTests.swift */; };
-		6503290C293A294A00666229 /* day1_part1_2022_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6503290B293A294A00666229 /* day1_part1_2022_input.txt */; };
-		6503290E293A299100666229 /* Day1Part1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503290D293A299100666229 /* Day1Part1Tests.swift */; };
-		65032910293A2AD500666229 /* Day1Part1Solution_2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503290F293A2AD500666229 /* Day1Part1Solution_2022.swift */; };
+		6503290C293A294A00666229 /* day1_2022_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6503290B293A294A00666229 /* day1_2022_input.txt */; };
+		6503290E293A299100666229 /* Day1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503290D293A299100666229 /* Day1Tests.swift */; };
+		65032910293A2AD500666229 /* Day1Solution_2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503290F293A2AD500666229 /* Day1Solution_2022.swift */; };
 		6595BF24275A996E0002D85C /* AdventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF23275A996E0002D85C /* AdventApp.swift */; };
 		6595BF26275A996E0002D85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF25275A996E0002D85C /* ContentView.swift */; };
 		6595BF28275A99700002D85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595BF27275A99700002D85C /* Assets.xcassets */; };
@@ -101,9 +101,9 @@
 		650328FB293A276700666229 /* LanternfishSimulatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanternfishSimulatorTests.swift; sourceTree = "<group>"; };
 		650328FC293A276700666229 /* BingoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingoTests.swift; sourceTree = "<group>"; };
 		650328FF293A276700666229 /* SyntaxScoringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntaxScoringTests.swift; sourceTree = "<group>"; };
-		6503290B293A294A00666229 /* day1_part1_2022_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day1_part1_2022_input.txt; sourceTree = "<group>"; };
-		6503290D293A299100666229 /* Day1Part1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day1Part1Tests.swift; sourceTree = "<group>"; };
-		6503290F293A2AD500666229 /* Day1Part1Solution_2022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Part1Solution_2022.swift; sourceTree = "<group>"; };
+		6503290B293A294A00666229 /* day1_2022_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day1_2022_input.txt; sourceTree = "<group>"; };
+		6503290D293A299100666229 /* Day1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day1Tests.swift; sourceTree = "<group>"; };
+		6503290F293A2AD500666229 /* Day1Solution_2022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Solution_2022.swift; sourceTree = "<group>"; };
 		6595BF20275A996E0002D85C /* Advent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6595BF23275A996E0002D85C /* AdventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventApp.swift; sourceTree = "<group>"; };
 		6595BF25275A996E0002D85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				650328D8293A26A200666229 /* task.txt */,
-				6503290B293A294A00666229 /* day1_part1_2022_input.txt */,
-				6503290F293A2AD500666229 /* Day1Part1Solution_2022.swift */,
+				6503290B293A294A00666229 /* day1_2022_input.txt */,
+				6503290F293A2AD500666229 /* Day1Solution_2022.swift */,
 			);
 			path = "Part 1";
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 		65032900293A276700666229 /* 2022 */ = {
 			isa = PBXGroup;
 			children = (
-				6503290D293A299100666229 /* Day1Part1Tests.swift */,
+				6503290D293A299100666229 /* Day1Tests.swift */,
 			);
 			path = 2022;
 			sourceTree = "<group>";
@@ -450,7 +450,7 @@
 				6595BF28275A99700002D85C /* Assets.xcassets in Resources */,
 				650328ED293A26F600666229 /* day4.txt in Resources */,
 				650328EF293A26F600666229 /* day1.txt in Resources */,
-				6503290C293A294A00666229 /* day1_part1_2022_input.txt in Resources */,
+				6503290C293A294A00666229 /* day1_2022_input.txt in Resources */,
 				650328E9293A26F600666229 /* day8.txt in Resources */,
 				650328F0293A26F600666229 /* day2.txt in Resources */,
 				650328EE293A26F600666229 /* day5.txt in Resources */,
@@ -480,7 +480,7 @@
 				650328D5293A25FC00666229 /* FileLoader.swift in Sources */,
 				650328CC293A25FC00666229 /* Point.swift in Sources */,
 				650328D3293A25FC00666229 /* Collection.swift in Sources */,
-				65032910293A2AD500666229 /* Day1Part1Solution_2022.swift in Sources */,
+				65032910293A2AD500666229 /* Day1Solution_2022.swift in Sources */,
 				650328D1293A25FC00666229 /* Bingo.swift in Sources */,
 				6595BF24275A996E0002D85C /* AdventApp.swift in Sources */,
 				650328CD293A25FC00666229 /* Step.swift in Sources */,
@@ -502,7 +502,7 @@
 				6503290A293A276700666229 /* SyntaxScoringTests.swift in Sources */,
 				65032907293A276700666229 /* LanternfishSimulatorTests.swift in Sources */,
 				65032905293A276700666229 /* CrabPositionerTests.swift in Sources */,
-				6503290E293A299100666229 /* Day1Part1Tests.swift in Sources */,
+				6503290E293A299100666229 /* Day1Tests.swift in Sources */,
 				65032906293A276700666229 /* SevenSegmentSearchTests.swift in Sources */,
 				65032908293A276700666229 /* BingoTests.swift in Sources */,
 				65032904293A276700666229 /* StringConversionTests.swift in Sources */,

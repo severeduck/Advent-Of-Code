@@ -28,6 +28,10 @@ extension String {
         split(separator: "\n").compactMap { String($0) }
     }
     
+    public var stringsIncludingEmptySubsequences: [String] {
+        split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
+    }
+    
     public var steps: [Step] {
         strings.compactMap { (step: String) -> Step? in
             let stepComponents = step

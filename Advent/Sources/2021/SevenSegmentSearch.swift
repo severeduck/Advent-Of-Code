@@ -158,6 +158,5 @@ struct SevenSegmentSearch {
         return outputDigits.reduce(0, { $0 * 10 + $1 })
     } while 1 > 0
         
-        return -1
     }
 }

@@ -107,6 +107,7 @@ public struct Submarine {
                 var s: String = "."
                 if let foundElement = pointsMap[key] {
                     s = String(foundElement)
+                    print(s)
                 }
             }
         }

@@ -23,21 +23,45 @@ struct RPSGame {
     private let yourMove: RPSMove
     private let opponentsMove: RPSMove
     
+    static func yourMoveFor(
+        desiredOutcome: PRSGameResult,
+        opponentsMove: RPSMove
+    ) -> RPSMove {
+        switch desiredOutcome {
+        case .draw:
+            return opponentsMove
+        case .win:
+            return RPSMove(playingScore: ((opponentsMove.playingScore % RPSMove.allCases.count) + 1))!
+        case .lose:
+            let addition = opponentsMove.playingScore - 1 == 0 ? RPSMove.allCases.count : 0
+            return RPSMove(playingScore: (opponentsMove.playingScore - 1) + addition)!
+        }
+    }
+    
     init(from line: String) {
         let components = line.split(separator: " ")
-        yourMove = RPSMove(rawValue: String(components.last!))!
+        let desiredOutcome = PRSGameResult(rawValue: String(components.last!))!
         opponentsMove = RPSMove(rawValue: String(components.first!))!
+        yourMove = Self.yourMoveFor(desiredOutcome: desiredOutcome, opponentsMove: opponentsMove)
+    }
+    
+    init(
+        yourMove: RPSMove,
+        opponentsMove: RPSMove
+    ) {
+        self.yourMove = yourMove
+        self.opponentsMove = opponentsMove
     }
 
     var getYourScore: Int {
         var gameResultScore: Int
         
         if yourMove.playingScore == opponentsMove.playingScore {
-            gameResultScore = 3
+            gameResultScore = PRSGameResult.draw.points
         } else if abs(yourMove.playingScore - opponentsMove.playingScore) == (RPSMove.allCases.count - 1) {
-            gameResultScore = yourMove.playingScore > opponentsMove.playingScore ? 0 : 6
+            gameResultScore = yourMove.playingScore > opponentsMove.playingScore ? PRSGameResult.lose.points : PRSGameResult.win.points
         } else {
-            gameResultScore = (yourMove.playingScore - opponentsMove.playingScore > 0) ? 6 : 0
+            gameResultScore = (yourMove.playingScore - opponentsMove.playingScore > 0) ? PRSGameResult.win.points : PRSGameResult.lose.points
         }
         
         return gameResultScore + yourMove.playingScore
@@ -45,17 +69,17 @@ struct RPSGame {
 }
 
 enum RPSMove: String, RawRepresentable, CaseIterable {
-    case rock
-    case paper
-    case scissors
-    
-    init?(rawValue: String) {
-        switch rawValue {
-        case "A", "X":
+    case rock = "A"
+    case paper = "B"
+    case scissors = "C"
+
+    init?(playingScore: Int) {
+        switch playingScore {
+        case 1:
             self = .rock
-        case "B", "Y":
+        case 2:
             self = .paper
-        case "C", "Z":
+        case 3:
             self = .scissors
         default:
             return nil
@@ -70,6 +94,23 @@ enum RPSMove: String, RawRepresentable, CaseIterable {
             return 2
         case .scissors:
             return 3
+        }
+    }
+}
+
+enum PRSGameResult: String, RawRepresentable {
+    case win = "Z"
+    case draw = "Y"
+    case lose = "X"
+    
+    var points: Int {
+        switch self {
+        case .win:
+            return 6
+        case .draw:
+            return 3
+        case .lose:
+            return 0
         }
     }
 }

@@ -213,26 +213,11 @@
 		650328D6293A264100666229 /* Day 1 */ = {
 			isa = PBXGroup;
 			children = (
-				650328D7293A264B00666229 /* Part 1 */,
-			);
-			path = "Day 1";
-			sourceTree = "<group>";
-		};
-		650328D7293A264B00666229 /* Part 1 */ = {
-			isa = PBXGroup;
-			children = (
 				650328D8293A26A200666229 /* task.txt */,
 				6503290B293A294A00666229 /* day1_2022_input.txt */,
 				6503290F293A2AD500666229 /* Day1Solution_2022.swift */,
 			);
-			path = "Part 1";
-			sourceTree = "<group>";
-		};
-		650328DA293A26F600666229 /* 2022 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 2022;
+			path = "Day 1";
 			sourceTree = "<group>";
 		};
 		650328DB293A26F600666229 /* 2021 */ = {
@@ -351,7 +336,6 @@
 		6595BF63275A9ADB0002D85C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				650328DA293A26F600666229 /* 2022 */,
 				650328DB293A26F600666229 /* 2021 */,
 				650328E6293A26F600666229 /* Common */,
 			);

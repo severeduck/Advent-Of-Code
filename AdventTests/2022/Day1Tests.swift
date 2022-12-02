@@ -4,7 +4,7 @@ import XCTest
 
 public class Day1Tests2022: XCTestCase {
     
-    private let inputFilename = "day1_2022_input"
+    private let inputFilename = "input_day1_2022"
 
     func testFindMaxTotalValue() {
         let fileContent = FileLoader.loadContent(forResource: inputFilename)

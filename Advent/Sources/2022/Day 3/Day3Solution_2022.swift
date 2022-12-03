@@ -9,14 +9,15 @@ import Foundation
 
 struct Day3Solution_2022 {
     
-    static func getRepeatedItemPriority(
-        for line: String
+    static func getCommonItemPriority(
+        for lines: [String]
     ) -> Int {
-        let leftsideCharacters = Set(line[0..<line.count / 2])
-        let rightsideCharacters = Set(line[(line.count / 2)...])
-        let repeatedCharacter = leftsideCharacters.intersection(rightsideCharacters).first!
+        let commonCharacter = Set(lines[0])
+            .intersection(Set(lines[1]))
+            .intersection(Set(lines[2]))
+            .first!
         
-        return characterPriorities[String(repeatedCharacter)]!
+        return characterPriorities[String(commonCharacter)]!
     }
     
     static var characterPriorities: [String: Int] = {

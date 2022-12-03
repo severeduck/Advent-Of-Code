@@ -9,12 +9,13 @@ public class Day3Tests2022: XCTestCase {
     func testGetRepeatedItemPriority() {
         let fileContent = FileLoader.loadContent(forResource: inputFilename)
         let lines = fileContent.strings
+        var result = 0
         
-        let result = lines.reduce(0) { partialResult, line in
-            partialResult + Day3Solution_2022.getRepeatedItemPriority(for: line)
+        for index in stride(from: 0, to: lines.count, by: 3) {
+            result += Day3Solution_2022.getCommonItemPriority(for: Array(lines[index..<(index + 3)]))
         }
         
-        XCTAssertEqual(result, 7578)
+        XCTAssertEqual(result, 2760)
     }
 }
 

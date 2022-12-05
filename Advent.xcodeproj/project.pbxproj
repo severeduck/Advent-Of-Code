@@ -55,6 +55,10 @@
 		6595BF26275A996E0002D85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595BF25275A996E0002D85C /* ContentView.swift */; };
 		6595BF28275A99700002D85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595BF27275A99700002D85C /* Assets.xcassets */; };
 		6595BF2B275A99700002D85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595BF2A275A99700002D85C /* Preview Assets.xcassets */; };
+		65B07888293E43FC00E5B21E /* input_day4_2022.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65B07885293E43FC00E5B21E /* input_day4_2022.txt */; };
+		65B07889293E43FC00E5B21E /* task_day4_2022.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65B07886293E43FC00E5B21E /* task_day4_2022.txt */; };
+		65B0788A293E43FC00E5B21E /* Day4Solution_2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B07887293E43FC00E5B21E /* Day4Solution_2022.swift */; };
+		65B0788C293E442500E5B21E /* Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0788B293E442500E5B21E /* Day4Tests.swift */; };
 		65FD59D7293A581300D7F48C /* task_day2_2022.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65FD59D6293A581300D7F48C /* task_day2_2022.txt */; };
 		65FD59D9293A585500D7F48C /* input_day2_2022.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65FD59D8293A585500D7F48C /* input_day2_2022.txt */; };
 		65FD59DB293A589600D7F48C /* Day2Solution_2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD59DA293A589600D7F48C /* Day2Solution_2022.swift */; };
@@ -122,6 +126,10 @@
 		6595BF27275A99700002D85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6595BF2A275A99700002D85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6595BF30275A99700002D85C /* AdventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B07885293E43FC00E5B21E /* input_day4_2022.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input_day4_2022.txt; sourceTree = "<group>"; };
+		65B07886293E43FC00E5B21E /* task_day4_2022.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = task_day4_2022.txt; sourceTree = "<group>"; };
+		65B07887293E43FC00E5B21E /* Day4Solution_2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day4Solution_2022.swift; sourceTree = "<group>"; };
+		65B0788B293E442500E5B21E /* Day4Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day4Tests.swift; sourceTree = "<group>"; };
 		65FD59D6293A581300D7F48C /* task_day2_2022.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = task_day2_2022.txt; path = "Advent/Sources/2022/Day 2/task_day2_2022.txt"; sourceTree = SOURCE_ROOT; };
 		65FD59D8293A585500D7F48C /* input_day2_2022.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input_day2_2022.txt; sourceTree = "<group>"; };
 		65FD59DA293A589600D7F48C /* Day2Solution_2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2Solution_2022.swift; sourceTree = "<group>"; };
@@ -150,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				650328AF293A25FC00666229 /* 2022 */,
-				6525E2D9293BF81E002EC9E6 /* Day 3 */,
 				650328B0293A25FC00666229 /* 2021 */,
 				650328C0293A25FC00666229 /* Common */,
 			);
@@ -162,6 +169,8 @@
 			children = (
 				650328D6293A264100666229 /* Day 1 */,
 				65FD59D5293A57F200D7F48C /* Day 2 */,
+				6525E2D9293BF81E002EC9E6 /* Day 3 */,
+				65B07884293E43FC00E5B21E /* Day 4 */,
 			);
 			path = 2022;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 				6503290D293A299100666229 /* Day1Tests.swift */,
 				65FD59DC293A58BB00D7F48C /* Day2Tests.swift */,
 				6525E2E0293BF89B002EC9E6 /* Day3Tests.swift */,
+				65B0788B293E442500E5B21E /* Day4Tests.swift */,
 			);
 			path = 2022;
 			sourceTree = "<group>";
@@ -311,8 +321,7 @@
 				6525E2DB293BF81E002EC9E6 /* input_day3_2022.txt */,
 				6525E2DC293BF81E002EC9E6 /* task_day3_2022.txt */,
 			);
-			name = "Day 3";
-			path = "2022/Day 3";
+			path = "Day 3";
 			sourceTree = "<group>";
 		};
 		6595BF17275A996D0002D85C = {
@@ -371,6 +380,16 @@
 				650328E6293A26F600666229 /* Common */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		65B07884293E43FC00E5B21E /* Day 4 */ = {
+			isa = PBXGroup;
+			children = (
+				65B07885293E43FC00E5B21E /* input_day4_2022.txt */,
+				65B07886293E43FC00E5B21E /* task_day4_2022.txt */,
+				65B07887293E43FC00E5B21E /* Day4Solution_2022.swift */,
+			);
+			path = "Day 4";
 			sourceTree = "<group>";
 		};
 		65FD59D5293A57F200D7F48C /* Day 2 */ = {
@@ -466,6 +485,8 @@
 			files = (
 				650328EB293A26F600666229 /* day7.txt in Resources */,
 				650328D9293A26A200666229 /* task_day1_2022.txt in Resources */,
+				65B07889293E43FC00E5B21E /* task_day4_2022.txt in Resources */,
+				65B07888293E43FC00E5B21E /* input_day4_2022.txt in Resources */,
 				650328EC293A26F600666229 /* day6.txt in Resources */,
 				6525E2DE293BF81E002EC9E6 /* input_day3_2022.txt in Resources */,
 				650328EA293A26F600666229 /* day9.txt in Resources */,
@@ -517,6 +538,7 @@
 				650328CD293A25FC00666229 /* Step.swift in Sources */,
 				650328D2293A25FC00666229 /* SyntaxScoring.swift in Sources */,
 				650328C7293A25FC00666229 /* LanternfishSimulator.swift in Sources */,
+				65B0788A293E43FC00E5B21E /* Day4Solution_2022.swift in Sources */,
 				650328CE293A25FC00666229 /* Line.swift in Sources */,
 				650328D4293A25FC00666229 /* String.swift in Sources */,
 				650328C9293A25FC00666229 /* LowPointsFinder.swift in Sources */,
@@ -529,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65032902293A276700666229 /* SubmarineTests.swift in Sources */,
+				65B0788C293E442500E5B21E /* Day4Tests.swift in Sources */,
 				65032903293A276700666229 /* LowPointsFinderTests.swift in Sources */,
 				6525E2E1293BF89B002EC9E6 /* Day3Tests.swift in Sources */,
 				6503290A293A276700666229 /* SyntaxScoringTests.swift in Sources */,

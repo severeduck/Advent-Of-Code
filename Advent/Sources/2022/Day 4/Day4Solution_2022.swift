@@ -27,12 +27,6 @@ struct Day4Solution_2022 {
         let range2Parts = range2Components.split(separator: "-")
         let range1 = Int(range1Parts.first!)!...Int(range1Parts.last!)!
         let range2 = Int(range2Parts.first!)!...Int(range2Parts.last!)!
-        return range1.fullyContains(otherRange: range2) || range2.fullyContains(otherRange: range1)
-    }
-}
-
-extension ClosedRange {
-    func fullyContains(otherRange: Self) -> Bool {
-        self.clamped(to: otherRange) == self
+        return range1.overlaps(range2) || range2.overlaps(range1)
     }
 }

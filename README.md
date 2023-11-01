@@ -1,3 +1,5 @@
+[![No Maintenance Intended](https://img.shields.io/maintenance/yes/2022)]([http://unmaintained.tech/](https://img.shields.io/maintenance/yes/2022))
+
 Advent of Code 2021 🎄
 
 ```
